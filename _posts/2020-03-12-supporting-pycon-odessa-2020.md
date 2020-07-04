@@ -1,7 +1,7 @@
 ---
 title: "Supporting PyCon Odessa!"
 categories:
-  - new
+  - pycon
 last_modified_at: 2019-06-10T14:25:52-05:00
 ---
 
