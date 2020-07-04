@@ -38,9 +38,9 @@ blockquote { background-color: #e7f1fc; border-left-color: #0a71e2; }
 /* ========================================================================== Site-wide ========================================================================== */
 .site-title a { color: #404040; }
 
-.copyright { color: gray; }
+.copyright { color: #999999; }
 
-.copyright a { color: gray; }
+.copyright a { color: #999999; }
 
 .taxonomy-title { color: #d9d9d9; }
 
@@ -80,9 +80,9 @@ blockquote { background-color: #e7f1fc; border-left-color: #0a71e2; }
 
 #markdown-toc { color: #586e75; }
 
-.pagination li a { color: #8d8d8d; border-color: #d9d9d9; }
+.pagination li a { color: #a3a3a3; border-color: #d9d9d9; }
 
-.pagination li a.current, .pagination li a.current.disabled { background-color: #8d8d8d; color: #fff; }
+.pagination li a.current, .pagination li a.current.disabled { background-color: #a3a3a3; color: #fff; }
 
 .pagination li a.disabled { color: #d9d9d9; }
 
@@ -103,7 +103,7 @@ th, td { border-bottom-color: #d9d9d9; }
 
 .notice h4 { margin-top: 0 !important; /* override*/ margin-bottom: 0.75em; }
 
-.page__content .notice h4 { /* using at-root to override .page-content h4 font size*/ margin-bottom: 0; font-size: 1rem; }
+.page__content .notice h4 { /* using at-root to override .page-content h4 font size*/ margin-bottom: 0; font-size: 1em; }
 
 .notice p:last-child { margin-bottom: 0 !important; /* override*/ }
 
@@ -120,7 +120,7 @@ th, td { border-bottom-color: #d9d9d9; }
 
 .notice--accent h4 { margin-top: 0 !important; /* override*/ margin-bottom: 0.75em; }
 
-.page__content .notice--accent h4 { /* using at-root to override .page-content h4 font size*/ margin-bottom: 0; font-size: 1rem; }
+.page__content .notice--accent h4 { /* using at-root to override .page-content h4 font size*/ margin-bottom: 0; font-size: 1em; }
 
 .notice--accent p:last-child { margin-bottom: 0 !important; /* override*/ }
 
@@ -137,7 +137,7 @@ th, td { border-bottom-color: #d9d9d9; }
 
 .notice--primary h4 { margin-top: 0 !important; /* override*/ margin-bottom: 0.75em; }
 
-.page__content .notice--primary h4 { /* using at-root to override .page-content h4 font size*/ margin-bottom: 0; font-size: 1rem; }
+.page__content .notice--primary h4 { /* using at-root to override .page-content h4 font size*/ margin-bottom: 0; font-size: 1em; }
 
 .notice--primary p:last-child { margin-bottom: 0 !important; /* override*/ }
 
@@ -154,7 +154,7 @@ th, td { border-bottom-color: #d9d9d9; }
 
 .notice--warning h4 { margin-top: 0 !important; /* override*/ margin-bottom: 0.75em; }
 
-.page__content .notice--warning h4 { /* using at-root to override .page-content h4 font size*/ margin-bottom: 0; font-size: 1rem; }
+.page__content .notice--warning h4 { /* using at-root to override .page-content h4 font size*/ margin-bottom: 0; font-size: 1em; }
 
 .notice--warning p:last-child { margin-bottom: 0 !important; /* override*/ }
 
@@ -171,7 +171,7 @@ th, td { border-bottom-color: #d9d9d9; }
 
 .notice--success h4 { margin-top: 0 !important; /* override*/ margin-bottom: 0.75em; }
 
-.page__content .notice--success h4 { /* using at-root to override .page-content h4 font size*/ margin-bottom: 0; font-size: 1rem; }
+.page__content .notice--success h4 { /* using at-root to override .page-content h4 font size*/ margin-bottom: 0; font-size: 1em; }
 
 .notice--success p:last-child { margin-bottom: 0 !important; /* override*/ }
 
@@ -188,7 +188,7 @@ th, td { border-bottom-color: #d9d9d9; }
 
 .notice--danger h4 { margin-top: 0 !important; /* override*/ margin-bottom: 0.75em; }
 
-.page__content .notice--danger h4 { /* using at-root to override .page-content h4 font size*/ margin-bottom: 0; font-size: 1rem; }
+.page__content .notice--danger h4 { /* using at-root to override .page-content h4 font size*/ margin-bottom: 0; font-size: 1em; }
 
 .notice--danger p:last-child { margin-bottom: 0 !important; /* override*/ }
 
@@ -205,7 +205,7 @@ th, td { border-bottom-color: #d9d9d9; }
 
 .notice--info h4 { margin-top: 0 !important; /* override*/ margin-bottom: 0.75em; }
 
-.page__content .notice--info h4 { /* using at-root to override .page-content h4 font size*/ margin-bottom: 0; font-size: 1rem; }
+.page__content .notice--info h4 { /* using at-root to override .page-content h4 font size*/ margin-bottom: 0; font-size: 1em; }
 
 .notice--info p:last-child { margin-bottom: 0 !important; /* override*/ }
 

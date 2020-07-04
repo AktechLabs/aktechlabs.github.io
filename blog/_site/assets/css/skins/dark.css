@@ -79,9 +79,9 @@ blockquote { background-color: #213741; border-left-color: #00adb5; }
 
 #markdown-toc { color: #eeffff; }
 
-.pagination li a { color: #f3f3f3; border-color: #fbfbfb; }
+.pagination li a { color: #bcbcbc; border-color: #fbfbfb; }
 
-.pagination li a.current, .pagination li a.current.disabled { background-color: #f3f3f3; color: #000; }
+.pagination li a.current, .pagination li a.current.disabled { background-color: #bcbcbc; color: #000; }
 
 .pagination li a.disabled { color: #fbfbfb; }
 
@@ -102,7 +102,7 @@ th, td { border-bottom-color: #fbfbfb; }
 
 .notice h4 { margin-top: 0 !important; /* override*/ margin-bottom: 0.75em; }
 
-.page__content .notice h4 { /* using at-root to override .page-content h4 font size*/ margin-bottom: 0; font-size: 1rem; }
+.page__content .notice h4 { /* using at-root to override .page-content h4 font size*/ margin-bottom: 0; font-size: 1em; }
 
 .notice p:last-child { margin-bottom: 0 !important; /* override*/ }
 
@@ -119,7 +119,7 @@ th, td { border-bottom-color: #fbfbfb; }
 
 .notice--accent h4 { margin-top: 0 !important; /* override*/ margin-bottom: 0.75em; }
 
-.page__content .notice--accent h4 { /* using at-root to override .page-content h4 font size*/ margin-bottom: 0; font-size: 1rem; }
+.page__content .notice--accent h4 { /* using at-root to override .page-content h4 font size*/ margin-bottom: 0; font-size: 1em; }
 
 .notice--accent p:last-child { margin-bottom: 0 !important; /* override*/ }
 
@@ -136,7 +136,7 @@ th, td { border-bottom-color: #fbfbfb; }
 
 .notice--primary h4 { margin-top: 0 !important; /* override*/ margin-bottom: 0.75em; }
 
-.page__content .notice--primary h4 { /* using at-root to override .page-content h4 font size*/ margin-bottom: 0; font-size: 1rem; }
+.page__content .notice--primary h4 { /* using at-root to override .page-content h4 font size*/ margin-bottom: 0; font-size: 1em; }
 
 .notice--primary p:last-child { margin-bottom: 0 !important; /* override*/ }
 
@@ -153,7 +153,7 @@ th, td { border-bottom-color: #fbfbfb; }
 
 .notice--warning h4 { margin-top: 0 !important; /* override*/ margin-bottom: 0.75em; }
 
-.page__content .notice--warning h4 { /* using at-root to override .page-content h4 font size*/ margin-bottom: 0; font-size: 1rem; }
+.page__content .notice--warning h4 { /* using at-root to override .page-content h4 font size*/ margin-bottom: 0; font-size: 1em; }
 
 .notice--warning p:last-child { margin-bottom: 0 !important; /* override*/ }
 
@@ -170,7 +170,7 @@ th, td { border-bottom-color: #fbfbfb; }
 
 .notice--success h4 { margin-top: 0 !important; /* override*/ margin-bottom: 0.75em; }
 
-.page__content .notice--success h4 { /* using at-root to override .page-content h4 font size*/ margin-bottom: 0; font-size: 1rem; }
+.page__content .notice--success h4 { /* using at-root to override .page-content h4 font size*/ margin-bottom: 0; font-size: 1em; }
 
 .notice--success p:last-child { margin-bottom: 0 !important; /* override*/ }
 
@@ -187,7 +187,7 @@ th, td { border-bottom-color: #fbfbfb; }
 
 .notice--danger h4 { margin-top: 0 !important; /* override*/ margin-bottom: 0.75em; }
 
-.page__content .notice--danger h4 { /* using at-root to override .page-content h4 font size*/ margin-bottom: 0; font-size: 1rem; }
+.page__content .notice--danger h4 { /* using at-root to override .page-content h4 font size*/ margin-bottom: 0; font-size: 1em; }
 
 .notice--danger p:last-child { margin-bottom: 0 !important; /* override*/ }
 
@@ -204,7 +204,7 @@ th, td { border-bottom-color: #fbfbfb; }
 
 .notice--info h4 { margin-top: 0 !important; /* override*/ margin-bottom: 0.75em; }
 
-.page__content .notice--info h4 { /* using at-root to override .page-content h4 font size*/ margin-bottom: 0; font-size: 1rem; }
+.page__content .notice--info h4 { /* using at-root to override .page-content h4 font size*/ margin-bottom: 0; font-size: 1em; }
 
 .notice--info p:last-child { margin-bottom: 0 !important; /* override*/ }
 
