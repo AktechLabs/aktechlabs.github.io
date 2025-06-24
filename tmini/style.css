@@ -167,10 +167,18 @@ header {
 
 .iphoneScreen {
     width: 349px;
+    height: 755px;
     -webkit-clip-path: url(#screenMask);
     clip-path: url(#screenMask);
     margin-left: 26px;
     margin-top: 23px;
+    overflow: hidden;
+}
+
+.iphoneScreen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Features */
@@ -332,6 +340,13 @@ footer {
         height: 488px;
         margin: 0px;
         margin-top: 17px;
+        overflow: hidden;
+    }
+    
+    .iphoneScreen img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     .features {
         flex-grow: 1;
