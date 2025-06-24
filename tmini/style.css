@@ -88,8 +88,7 @@ header {
 .headerIcon {
     width: 50px;
     height: 50px;
-    -webkit-clip-path: url(#shape);
-    clip-path: url(#shape);
+    border-radius: 12px;
 }
 
 /* App Info */
@@ -109,8 +108,7 @@ header {
 .appIconLarge {
     width: 120px;
     height: 120px;
-    -webkit-clip-path: url(#shape120);
-    clip-path: url(#shape120);
+    border-radius: 26px;
 }
 
 .appNamePriceContainer {
@@ -195,6 +193,7 @@ header {
 
 .feature {
     display: flex;
+    align-items: flex-start;
     padding-top: 63px;
     padding-left: 15px;
     padding-right: 15px;
@@ -223,6 +222,11 @@ header {
 
 .featureText {
     margin-left: 18px;
+    flex: 1;
+}
+
+.fa-stack {
+    flex-shrink: 0;
 }
 
 .featureText > h3 {
@@ -356,6 +360,7 @@ footer {
     }
     .feature {
         display: flex;
+        align-items: flex-start;
         padding-top: 41px;
         padding-left: 15px;
         padding-right: 15px;
