@@ -1,8 +1,6 @@
 ---
 title: About
-layout: tag
-permalink: /about/
-taxonomy: markup
+url: /about/
 ---
 
 Aktech Labs is a consulting company based in London. We solve engineering problems

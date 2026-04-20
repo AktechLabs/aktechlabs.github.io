@@ -1,10 +1,12 @@
 ---
 title: "Supporting the first PyCon Africa!"
+date: 2019-06-10T14:25:52-05:00
+lastmod: 2019-06-10T14:25:52-05:00
 categories:
   - pycon
-last_modified_at: 2019-06-10T14:25:52-05:00
+tags:
+  - pycon
 ---
-
 
 We're excited to announce that we're supporting the first ever [PyCon Africa 2019](https://africa.pycon.org/2019).
 It's happening in Bank of Ghana Auditorium, University of Ghana, Legon Campus, Accra,
@@ -15,6 +17,3 @@ from 6th-10th August 2019.
 This is part of our initiative to promote Python Programming Language in under represented geographies.
 
 Checkout their schedule here: [https://africa.pycon.org/2019/schedule/](https://africa.pycon.org/2019/schedule/)
-
-                                     
-

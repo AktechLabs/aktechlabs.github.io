@@ -1,0 +1,12 @@
+<header class="site-header">
+	<a class="site-title" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+	<nav>
+		{{ range .Site.Menus.main }}
+		<a href="{{ .URL | relURL }}">{{ .Name }}</a>
+		{{ end }}
+		<button class="theme-toggle" type="button" aria-label="Toggle theme">
+			<span class="icon-dark"><i class="fas fa-moon"></i></span>
+			<span class="icon-light"><i class="fas fa-sun"></i></span>
+		</button>
+	</nav>
+</header>

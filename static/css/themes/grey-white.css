@@ -1,0 +1,14 @@
+/* Theme */
+
+main {
+	background: var(--hero-bg);
+	color: var(--hero-text);
+}
+
+.icons-social a {
+	color: var(--hero-text);
+}
+
+.icons-social a svg path{
+	fill: var(--hero-text);
+}

@@ -1,0 +1,45 @@
+baseURL = "https://aktechlabs.com/"
+languageCode = "en-us"
+title = "Aktech Labs"
+enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  description = "Solving Problems, one at a time."
+  author = "Amit Kumar"
+  location = "London, United Kingdom"
+  copyrightStart = 2018
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+[menu]
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 2
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 3
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 4
+
+[permalinks]
+  posts = "/:year/:month/:slug/"

@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="page">
+	{{ partial "header.html" . }}
+	<article class="content post">
+		<h1>{{ .Title }}</h1>
+		{{ if and (not .Date.IsZero) (eq .Section "posts") }}
+		<p class="meta">
+			<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+			{{ with .Params.categories }} · {{ range . }}<a href="{{ "categories/" | relURL }}{{ . | urlize }}/">{{ . }}</a> {{ end }}{{ end }}
+		</p>
+		{{ end }}
+		{{ .Content }}
+		{{ with .Params.tags }}
+		<p class="tags">
+			{{ range . }}<a href="{{ "tags/" | relURL }}{{ . | urlize }}/">#{{ . }}</a> {{ end }}
+		</p>
+		{{ end }}
+	</article>
+	{{ partial "footer.html" . }}
+</div>
+{{ end }}

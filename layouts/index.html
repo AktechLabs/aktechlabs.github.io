@@ -1,0 +1,18 @@
+{{ define "main" }}
+<main>
+	<div class="intro">{{ .Site.Title }}</div>
+	<div class="tagline">{{ .Site.Params.location }}</div>
+	<div class="icons-social">
+		<a target="_blank" href="https://github.com/aktechlabs"><i class="fab fa-github"></i></a>
+		<a target="_blank" href="https://www.linkedin.com/company/aktech-labs/"><i class="fab fa-linkedin"></i></a>
+		<a target="_blank" href="https://twitter.com/aktechlabs/"><i class="fab fa-twitter"></i></a>
+		<a href="mailto:hello@aktechlabs.com"><i class="fas fa-envelope-square"></i></a>
+		<a href="/posts/"><i class="fas fa-external-link-alt"></i></a>
+	</div>
+	<div class="footer">&copy; {{ .Site.Params.copyrightStart }}-{{ now.Year }} {{ .Site.Title }}</div>
+	<button class="theme-toggle landing-toggle" type="button" aria-label="Toggle theme">
+		<span class="icon-dark"><i class="fas fa-moon"></i></span>
+		<span class="icon-light"><i class="fas fa-sun"></i></span>
+	</button>
+</main>
+{{ end }}

@@ -1,10 +1,12 @@
 ---
 title: "Supporting PyCon Odessa!"
+date: 2020-03-12T00:00:00-05:00
+lastmod: 2020-03-12T00:00:00-05:00
 categories:
   - pycon
-last_modified_at: 2019-06-10T14:25:52-05:00
+tags:
+  - pycon
 ---
-
 
 We're excited to announce that we're supporting [PyCon Odessa 2020](https://pyconodessa.com/).
 It's happening in Odessa BC «Solnechnyiy», 5, Sonyachna St. in September 2020.
@@ -14,6 +16,3 @@ It's happening in Odessa BC «Solnechnyiy», 5, Sonyachna St. in September 2020.
 This is part of our initiative to promote Python Programming Language in underrepresented geographies.
 
 Checkout their talks here: [https://pyconodessa.com/en/#speakers](https://pyconodessa.com/en/#speakers)
-
-                                     
-

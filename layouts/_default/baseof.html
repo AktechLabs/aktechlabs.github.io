@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+	<script>
+		(function() {
+			try {
+				var t = localStorage.getItem('theme');
+				if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+			} catch (e) {}
+		})();
+	</script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
+	<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+	<link rel="icon" href="{{ "favicon.ico" | relURL }}" type="image/png">
+	<link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Fira+Sans:300,400,600" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="{{ "css/reset.css" | relURL }}">
+	<link rel="stylesheet" href="{{ "css/styles.css" | relURL }}">
+	<link rel="stylesheet" href="{{ "css/themes/grey-white.css" | relURL }}">
+	{{ with .OutputFormats.Get "rss" }}<link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ $.Site.Title }}">{{ end }}
+</head>
+<body>
+	{{ block "main" . }}{{ end }}
+	<script>
+		(function() {
+			function setTheme(t) {
+				if (t) { document.documentElement.setAttribute('data-theme', t); localStorage.setItem('theme', t); }
+				else { document.documentElement.removeAttribute('data-theme'); localStorage.removeItem('theme'); }
+			}
+			function currentTheme() {
+				var t = document.documentElement.getAttribute('data-theme');
+				if (t) return t;
+				return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+			}
+			document.querySelectorAll('.theme-toggle').forEach(function(btn) {
+				btn.addEventListener('click', function() {
+					setTheme(currentTheme() === 'dark' ? 'light' : 'dark');
+				});
+			});
+		})();
+	</script>
+</body>
+</html>
