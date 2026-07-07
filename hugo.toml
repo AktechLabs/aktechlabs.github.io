@@ -11,6 +11,7 @@ enableRobotsTXT = true
   author = "Amit Kumar"
   location = "London, United Kingdom"
   copyrightStart = 2018
+  showWork = false
 
 [taxonomies]
   category = "categories"

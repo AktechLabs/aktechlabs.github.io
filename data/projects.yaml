@@ -1,0 +1,38 @@
+items:
+  - title: cirun.io
+    url: https://cirun.io
+    accent: "#0e9ebe"
+    blurb: Managed self-hosted GitHub Actions runners on your own cloud.
+    image: /images/projects/cirun.png
+  - title: Tmini
+    url: https://apps.apple.com/app/id6747725656
+    accent: "#0066ff"
+    blurb: Terminal & SSH client for iOS.
+    image: /images/projects/tmini.png
+  - title: meda
+    url: https://github.com/cirunlabs/meda
+    accent: "#051c2c"
+    blurb: Cloud-Hypervisor VM management.
+    image: /images/projects/meda.png
+    contain: true
+    bg: "#ffffff"
+  - title: ai-sandbox
+    url: https://github.com/aktech/ai-sandbox
+    accent: "#715df2"
+    blurb: Per-project Docker sandbox for AI coding agents.
+    image: /images/projects/ai-sandbox.svg
+  - title: darby
+    url: https://github.com/aktech/darby
+    accent: "#0066ff"
+    blurb: Minimal, beautiful Hugo documentation theme.
+    image: /images/projects/darby.png
+  - title: CodeCinema
+    url: https://codecinema.io
+    accent: "#da1558"
+    blurb: Renders animated code-typing sequences to MP4 or image exports.
+    image: /images/projects/codecinema.png
+  - title: Gitspace
+    url: https://gitspace.io
+    accent: "#6c9dff"
+    blurb: See how much space your public GitHub repositories occupy.
+    image: /images/projects/gitspace.png

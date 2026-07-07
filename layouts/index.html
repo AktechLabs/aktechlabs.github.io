@@ -1,18 +1,79 @@
 {{ define "main" }}
-<main>
-	<div class="intro">{{ .Site.Title }}</div>
-	<div class="tagline">{{ .Site.Params.location }}</div>
-	<div class="icons-social">
-		<a target="_blank" href="https://github.com/aktechlabs"><i class="fab fa-github"></i></a>
-		<a target="_blank" href="https://www.linkedin.com/company/aktech-labs/"><i class="fab fa-linkedin"></i></a>
-		<a target="_blank" href="https://twitter.com/aktechlabs/"><i class="fab fa-twitter"></i></a>
-		<a href="mailto:hello@aktechlabs.com"><i class="fas fa-envelope-square"></i></a>
-		<a href="/posts/"><i class="fas fa-external-link-alt"></i></a>
-	</div>
-	<div class="footer">&copy; {{ .Site.Params.copyrightStart }}-{{ now.Year }} {{ .Site.Title }}</div>
-	<button class="theme-toggle landing-toggle" type="button" aria-label="Toggle theme">
-		<span class="icon-dark"><i class="fas fa-moon"></i></span>
-		<span class="icon-light"><i class="fas fa-sun"></i></span>
-	</button>
+<main class="home">
+	{{ partial "header.html" . }}
+
+	<section class="hero">
+		<h1>Solving problems, one at a time.</h1>
+		<p class="hero-sub">Aktech Labs is a London firm building software and its own products across Web, Machine Learning, and Big Data.</p>
+		{{ if site.Params.showWork }}<a class="hero-link" href="#work">See our work &rarr;</a>{{ end }}
+	</section>
+
+	<section class="services">
+		<div class="service">Web</div>
+		<div class="service">Machine Learning</div>
+		<div class="service">Big Data</div>
+	</section>
+
+	{{ if site.Params.showWork }}
+	<section class="portfolio" id="work">
+		{{ range .Site.Data.projects.items }}
+		<a class="project-card{{ if .light }} is-light{{ end }}" href="{{ .url }}" target="_blank" rel="noopener"{{ if not .image }} style="--card-accent: {{ .accent }}"{{ end }}>
+			<div class="project-visual{{ if .contain }} is-contain{{ end }}"{{ if .image }} style="background-image: url('{{ .image | relURL }}'){{ with .bg }};background-color:{{ . }}{{ end }}"{{ end }}></div>
+			<div class="project-body">
+				<h2>{{ .title }}</h2>
+				<p>{{ .blurb }}</p>
+			</div>
+		</a>
+		{{ end }}
+	</section>
+	{{ end }}
+
+	<section class="about" id="about">
+		<div class="about-inner">
+			<h2>About Aktech Labs</h2>
+			<p>Aktech Labs is a London firm. We take on hard engineering problems across Web, Machine Learning, and Big Data, and turn some of them into products of our own.</p>
+		</div>
+	</section>
+
+	<section class="contact" id="contact">
+		<div class="contact-inner">
+			<h2>Tell us what you're building.</h2>
+			<a class="contact-email" href="mailto:hello@aktechlabs.com">hello@aktechlabs.com</a>
+		</div>
+	</section>
+
+	<footer class="site-foot">
+		<div class="foot-inner">
+			<div class="foot-brand">
+				<div class="foot-logo">Aktech Labs</div>
+				<p>Solving problems, one at a time.</p>
+				<div class="foot-social">
+					<a target="_blank" rel="noopener" href="https://github.com/aktechlabs" aria-label="GitHub"><i class="fab fa-github"></i></a>
+					<a target="_blank" rel="noopener" href="https://www.linkedin.com/company/aktech-labs/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+					<a target="_blank" rel="noopener" href="https://x.com/aktechlabs/" aria-label="X"><svg class="x-icon" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+				</div>
+			</div>
+			<nav class="foot-cols">
+				{{ if site.Params.showWork }}
+				<div class="foot-col">
+					<h3>Work</h3>
+					{{ range .Site.Data.projects.items }}
+					<a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>
+					{{ end }}
+				</div>
+				{{ end }}
+				<div class="foot-col">
+					<h3>Company</h3>
+					<a href="{{ "/posts/" | relURL }}">Writing</a>
+					<a href="#about">About</a>
+					<a href="#contact">Contact</a>
+				</div>
+			</nav>
+		</div>
+		<div class="foot-bar">
+			<span>&copy; {{ .Site.Params.copyrightStart }}-{{ now.Year }} Aktech Labs</span>
+			<span>{{ .Site.Params.location }}</span>
+		</div>
+	</footer>
 </main>
 {{ end }}
